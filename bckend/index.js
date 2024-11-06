@@ -3,7 +3,9 @@ const app = express()
 const routes = require('./routes/router')
 const mongoose = require('mongoose')
 const route = require('./routes/router')
-app.use(route)
+
+//middlewares
+app.use('/',route)
 
 
 try {
